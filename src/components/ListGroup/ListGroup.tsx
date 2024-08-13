@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Fragment } from "react";
-import "./ListGroup.module.css";
+//By doing module we're attatched to it.
+import styles from "./ListGroup.module.css";
 interface Props {
   items: string[];
   heading: string;
@@ -15,7 +16,7 @@ function ListGroup({ items, heading, onSelectItem }: Props) {
     <Fragment>
       <h1> {heading} </h1>
       {items.length == 0 && <p> No item found</p>}
-      <ul className="list-group">
+      <ul className={styles["list-group"]}>
         {items.map((item, index) => (
           //often each item should be something like item.id
           <li
