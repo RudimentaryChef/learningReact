@@ -1,17 +1,19 @@
 .list-group {
     list-style: none;
-    padding: 0;
-    margin: 0;
+    padding: 0.2rem 1rem; /* Top/Bottom Left/Right */
+    margin: 0 auto; /* Center the list-group horizontally */
+    width: 80%; /* Adjust the width to a percentage of the parent container or screen */
+    max-width: 800px; /* Optional: set a maximum width */
     font-family: 'Poppins', sans-serif; /* Custom font */
 }
 
 .list-group li {
-    background: linear-gradient(45deg, #ff6b6b, #f8e1e1); /* Gradient background */
+    background: linear-gradient(45deg, #9b59b6, #dcd6f7); /* Purple gradient background */
     margin: 10px 0;
     padding: 15px;
     border-radius: 12px; /* Rounded corners */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Soft shadow */
-    color: #333; /* Text color */
+    color: #2c3e50; /* Darker text color */
     font-size: 1.2em;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
@@ -24,16 +26,16 @@
 .list-group li::before {
     content: '★'; /* Add a star before each item */
     margin-right: 10px;
-    color: #ff6b6b;
+    color: #000000; /* Purple star */
     font-size: 1.5em;
 }
 
 .list-group li:first-child {
-    border-top: 3px solid #ff6b6b; /* Top border for first item */
+    border-top: 3px solid #9b59b6; /* Purple top border for first item */
 }
 
 .list-group li:last-child {
-    border-bottom: 3px solid #ff6b6b; /* Bottom border for last item */
+    border-bottom: 3px solid #9b59b6; /* Purple bottom border for last item */
 }
 
 .list-group li:not(:last-child) {

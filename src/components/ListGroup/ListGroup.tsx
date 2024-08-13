@@ -1,14 +1,13 @@
 import { useState } from "react";
 import { Fragment } from "react";
-import './ListGroup.css'
+import "./ListGroup.module.css";
 interface Props {
   items: string[];
   heading: string;
   // function takes (item: string) =>
   onSelectItem: (item: string) => void; // kinda like onclick
 }
-function ListGroup({items, heading, onSelectItem}: Props) {
-  
+function ListGroup({ items, heading, onSelectItem }: Props) {
   //This is a hook. Allows us to tap into built in functions.
   const [selectedIndex, setSelectedIndex] = useState(-1);
   //JSX doesn't have for loops
@@ -25,7 +24,9 @@ function ListGroup({items, heading, onSelectItem}: Props) {
                 ? "list-group-item active"
                 : "list-group-item"
             }
-            onClick={() => {setSelectedIndex(index), onSelectItem(item)}}
+            onClick={() => {
+              setSelectedIndex(index), onSelectItem(item);
+            }}
             key={item}
           >
             {item}
