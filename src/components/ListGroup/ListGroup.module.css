@@ -1,13 +1,13 @@
-.list-group {
+.listGroup {
     list-style: none;
     padding: 0.2rem 1rem; /* Top/Bottom Left/Right */
-    margin: 0 auto; /* Center the list-group horizontally */
+    margin: 0 auto; /* Center the listGroup horizontally */
     width: 80%; /* Adjust the width to a percentage of the parent container or screen */
     max-width: 800px; /* Optional: set a maximum width */
     font-family: 'Poppins', sans-serif; /* Custom font */
 }
 
-.list-group li {
+.listGroup li {
     background: linear-gradient(45deg, #9b59b6, #dcd6f7); /* Purple gradient background */
     margin: 10px 0;
     padding: 15px;
@@ -18,32 +18,32 @@
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
 }
 
-.list-group li:hover {
+.listGroup li:hover {
     transform: scale(1.05); /* Slightly enlarge on hover */
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
 }
 
-.list-group li::before {
+.listGroup li::before {
     content: '★'; /* Add a star before each item */
     margin-right: 10px;
     color: #000000; /* Purple star */
     font-size: 1.5em;
 }
 
-.list-group li:first-child {
+.listGroup li:first-child {
     border-top: 3px solid #9b59b6; /* Purple top border for first item */
 }
 
-.list-group li:last-child {
+.listGroup li:last-child {
     border-bottom: 3px solid #9b59b6; /* Purple bottom border for last item */
 }
 
-.list-group li:not(:last-child) {
+.listGroup li:not(:last-child) {
     border-bottom: 1px solid #ddd; /* Separator between items */
 }
 
 @media (max-width: 768px) {
-    .list-group li {
+    .listGroup li {
         font-size: 1em; /* Responsive font size */
     }
 }
