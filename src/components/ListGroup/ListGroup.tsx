@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Fragment } from "react";
+import './ListGroup.css'
 interface Props {
   items: string[];
   heading: string;
