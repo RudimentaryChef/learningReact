@@ -1,3 +1,4 @@
+import { BsFillCalendarFill } from "react-icons/bs";
 import { useState } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button";
@@ -5,6 +6,8 @@ import Button from "./components/Button";
 import ListGroup from "./components/ListGroup";
 
 function App() {
+  if(true)
+    return (<div><Button onClick = {() => {}}> My Button</Button></div>)
   const [state, setState] = useState(false);
   let text = "I am a happy little button!";
   let alertText = "I AM AN ALERT";
@@ -19,6 +22,16 @@ function App() {
 
   return (
     <div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          height: "20vh",
+        }}
+      >
+        <BsFillCalendarFill size={50} />
+      </div>
       <ListGroup
         items={items}
         heading={heading}
