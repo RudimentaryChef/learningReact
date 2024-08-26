@@ -2,12 +2,17 @@ import { BsFillCalendarFill } from "react-icons/bs";
 import { useState } from "react";
 import Alert from "./components/Alert";
 import Button from "./components/Button/Button";
+import Like from "./components/Like/Like";
 //By default complier will look at the index file
 import ListGroup from "./components/ListGroup";
 
 function App() {
-  if(true)
-    return (<div><Button onClick = {() => {}}> My Button</Button></div>)
+  if (true)
+    return (
+      <div>
+        <Like onClick={() => console.log("clicked")} />
+      </div>
+    );
   const [state, setState] = useState(false);
   let text = "I am a happy little button!";
   let alertText = "I AM AN ALERT";
