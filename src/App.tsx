@@ -1,7 +1,7 @@
 import { BsFillCalendarFill } from "react-icons/bs";
 import { useState } from "react";
 import Alert from "./components/Alert";
-import Button from "./components/Button";
+import Button from "./components/Button/Button";
 //By default complier will look at the index file
 import ListGroup from "./components/ListGroup";
 
